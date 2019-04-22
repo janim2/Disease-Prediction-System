@@ -1,0 +1,326 @@
+{
+    "age": {
+        "preprocessing": {
+            "fill_value": 0,
+            "missing_value_strategy": "fill_with_const"
+        }
+    },
+    "albumin": {
+        "preprocessing": {
+            "fill_value": 0,
+            "missing_value_strategy": "fill_with_const"
+        }
+    },
+    "alk_phosphate": {
+        "preprocessing": {
+            "fill_value": 0,
+            "missing_value_strategy": "fill_with_const"
+        }
+    },
+    "anorexia": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 29,
+            "2": 113,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "antivirals": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 23,
+            "2": 119,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "ascites": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 17,
+            "2": 125,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "bilirubin": {
+        "preprocessing": {
+            "fill_value": 0,
+            "missing_value_strategy": "fill_with_const"
+        }
+    },
+    "fatigue": {
+        "idx2str": [
+            "<UNK>",
+            "1",
+            "2"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 91,
+            "2": 51,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 1,
+            "2": 2,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "histology": {
+        "idx2str": [
+            "<UNK>",
+            "1",
+            "2"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 79,
+            "2": 63,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 1,
+            "2": 2,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "liver_big": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 25,
+            "2": 117,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "liver_firm": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 59,
+            "2": 83,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "malaise": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 54,
+            "2": 88,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "protime": {
+        "preprocessing": {
+            "fill_value": 0,
+            "missing_value_strategy": "fill_with_const"
+        }
+    },
+    "sgot": {
+        "preprocessing": {
+            "fill_value": 0,
+            "missing_value_strategy": "fill_with_const"
+        }
+    },
+    "spiders": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 47,
+            "2": 95,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "spleen_palable": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 27,
+            "2": 115,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "steroid": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 69,
+            "2": 73,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    },
+    "varices": {
+        "idx2str": [
+            "<UNK>",
+            "2",
+            "1"
+        ],
+        "preprocessing": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "str2freq": {
+            "1": 17,
+            "2": 125,
+            "<UNK>": 0
+        },
+        "str2idx": {
+            "1": 2,
+            "2": 1,
+            "<UNK>": 0
+        },
+        "vocab_size": 3
+    }
+}
