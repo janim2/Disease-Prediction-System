@@ -1,0 +1,252 @@
+<!DOCType HTML>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css"/>
+		<title>PreDiit User</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+	</head>
+	<body>
+		<div id = "theTop">
+			<div class="edges">
+				<h1>PreDiit</h1>
+			</div>
+			<div id = "middle">
+				<ul>
+					<div><li onclick="location.href='index.html'">Home</li></div>
+					<div><li onclick="location.href='#about_message'">About</li></div>
+					<div><li onclick="location.href='#footer'">Contact</li></div>
+					<div><li onclick="location.href='login.html'">Logout</li></div>
+				</ul>
+			</div>
+			<div class="edges">
+
+			</div>	
+		</div>
+
+		<div id="welcomeImage">
+		</div>
+	
+		<div id = "welcome_message">
+			<h1>Welcome,<span> Prediit User</span></h1>
+		</div>	
+
+		<div id = "about_message">
+            <h1>View Your Information</h1>
+            <div style="position: relative;left:30%;">
+                <p><span>Name:</span>    Jesse Anim</p>
+                <p><span>Age:</span>     50 years</p>
+                <p><span>Gender:</span>     Male</p>
+                <p><span>Email:</span>   iamjesse75@gmail.com</p>
+                <p><span>NHIS number:</span>   D4545JJU</p>
+            </div>
+        </div>
+        <div style="margin-bottom: 50px;">
+
+        </div>
+
+		<footer id = "footer">
+			<div class="edges">
+				<h2 id = "contactUs">Contact Us</h2>
+				<form>
+					<input id = "text" type = "text" placeholder="Email"/>
+					<input id = "text" type = "text" placeholder="Subject"/>
+					<input id = "text" type = "text" placeholder="Message"/>
+					<input id = "button"  type = "button" value="submit"/>
+				</form>
+			</div>
+			<div id = "middle">
+				<ul>
+					<div><li><a href="#" class="fa fa-facebook"></a></li></div>
+					<div><li><a href="#" class="fa fa-twitter"></a></li></div>
+					<div><li><a href="#" class="fa fa-youtube"></a></li></div>
+
+<div><li><a href="#" class="fa fa-youtube"></a></li></div>
+					<p>Copyright c2019</p>
+				</ul>
+			</div>
+			<div class="edges">
+				<h1 style = "color:white;">PreDiit</h1>
+			</div>	
+
+		</footer>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script type = "text/javascript" src="tabs_change.js"></script>
+        <script type = "text/javascript" src="interaction.js"></script>
+        
+        <script type = "text/javascript">
+      // import $ from 'jquery';
+
+if(typeof web3 != 'undefined'){
+    web3 = new Web3(web3.currentProvider);
+}else{
+    web3 = new Web3(new Web3.providers.HttpProvider("http://localhost:8545"));
+}
+
+
+web3.eth.defaultAccount = web3.eth.accounts[0];
+var prediitvariable = web3.eth.contract(
+//ABI value goes here
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_fName",
+				"type": "string"
+			},
+			{
+				"name": "_lastname",
+				"type": "string"
+			},
+			{
+				"name": "_age",
+				"type": "uint256"
+			},
+			{
+				"name": "_gender",
+				"type": "string"
+			}
+		],
+		"name": "addPatient",
+		"outputs": [],
+		"payable": false,
+		"type": "function",
+		"stateMutability": "nonpayable"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "h_age",
+				"type": "uint256"
+			},
+			{
+				"name": "h_trestbps",
+				"type": "uint256"
+			},
+			{
+				"name": "h_restecg",
+				"type": "uint256"
+			},
+			{
+				"name": "h_thalach",
+				"type": "uint256"
+			},
+			{
+				"name": "h_exang",
+				"type": "uint256"
+			},
+			{
+				"name": "h_oldpeak",
+				"type": "uint256"
+			},
+			{
+				"name": "h_slope",
+				"type": "uint256"
+			},
+			{
+				"name": "h_ca",
+				"type": "uint256"
+			},
+			{
+				"name": "h_thal",
+				"type": "uint256"
+			}
+		],
+		"name": "getHeartData",
+		"outputs": [],
+		"payable": false,
+		"type": "function",
+		"stateMutability": "nonpayable"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "hep_age",
+				"type": "uint256"
+			},
+			{
+				"name": "hep_steroid",
+				"type": "uint256"
+			},
+			{
+				"name": "hep_bilirubin",
+				"type": "uint256"
+			},
+			{
+				"name": "hep_alk",
+				"type": "uint256"
+			},
+			{
+				"name": "hep_sgot",
+				"type": "uint256"
+			},
+			{
+				"name": "hep_albumin",
+				"type": "uint256"
+			},
+			{
+				"name": "hep_protime",
+				"type": "uint256"
+			}
+		],
+		"name": "getHepatitisData",
+		"outputs": [],
+		"payable": false,
+		"type": "function",
+		"stateMutability": "nonpayable"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_docfname",
+				"type": "string"
+			},
+			{
+				"name": "_doclname",
+				"type": "string"
+			},
+			{
+				"name": "_docage",
+				"type": "uint256"
+			},
+			{
+				"name": "_docgender",
+				"type": "string"
+			}
+		],
+		"name": "addDoctor",
+		"outputs": [],
+		"payable": false,
+		"type": "function",
+		"stateMutability": "nonpayable"
+	}
+]
+);
+
+//after deploying the contract in remix.ethereum web complier the code generated is pasted in the 
+// quotes below
+var prediit = prediitvariable.at(
+    //compile code pasted here
+    // '0x2f85b0bf9f42200e1bf13cc8af742a7bc9c11f36'
+    '0x76b24545e95860289aac91b1fdf06ebeb98a4391'
+    
+    );
+console.log(prediit);
+
+	prediit.getPatientInfo(function(error,result){
+		if(!error){
+			$("#instructor").html(result[0]+' ('+result[1]+' years old)');		
+		}else
+			console.log(error);		
+	});
+        </script>
+	</body>
+</html>

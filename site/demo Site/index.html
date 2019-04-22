@@ -1,0 +1,240 @@
+<!DOCType HTML>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css"/>
+		<title>PreDiit | Home</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+	</head>
+	<body>
+		<div id = "theTop">
+			<div class="edges">
+				<h1>PreDiit</h1>
+			</div>
+			<div id = "middle">
+				<ul>
+					<div><li onclick="location.href='index.html'">Home</li></div>
+					<div><li onclick="location.href='#about_message'">About</li></div>
+					<div><li onclick="location.href='#footer'">Contact</li></div>
+					<div><li onclick="location.href='login.html'">Login</li></div>
+				</ul>
+			</div>
+			<div class="edges">
+
+			</div>	
+		</div>
+
+		<div id="welcomeImage">
+		</div>
+	
+		<div id = "welcome_message">
+			<h1>Welcome,<span> Prediit User to the most secure hospital management and disease prediction system on the market</span></h1>
+		</div>	
+
+		<div id = "about_message">
+			<h1>About</h1>
+			<p>In this current age and time where data protection is as important as the food we eat due to the presence of software vulnerabilities and the like, user information protection has become a very important topic to many companies.
+				Heath sectors are no exception. Most of these health institutions have centralized systems that store all their user information and health records. Great right?
+				No! A centralized system although great in the 19th century now increases the risk of losing confidential patient information to hackers and other malicious intentioned persons.
+				Therefore, Prediit is a decentralized Healthcare system that minimizes if not prevent unwanted access to patient information to the highest degree. Assuring patients that their personal health information is in safe hands.
+				An added feature to Prediit is that predictions of various kinds of diseases can be made with the click of a button. Feel free to find out if you have Hepatitis or HIV. The choice is YOURS. </p>
+		</div>
+
+		<div style="margin-bottom: 50px;">
+
+			</div>
+
+		<!-- this is code for the tabs -->
+
+		<!-- <div id = "welcome_message">
+				<h1>Get Started</h1>
+		</div>	
+
+		<div id = "main_meat">
+			<div id = "main_meat_tab">
+				<div>
+						<button class = "tablinks" onclick="openCity(event,'main_meat_addDoc')" id = "defaultOpen">Add Doctor</button>
+						<button class = "tablinks" onclick="openCity(event, 'main_meat_add')">Add Patient</button>
+						<button class = "tablinks" onclick="openCity(event, 'main_meat_predict')">Predict Disease</button>		
+				</div>
+			</div> -->
+
+			<!-- doctor tab content starts here -->
+			<!-- <div id="main_meat_addDoc" class = "tabcontent">
+					<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+					<h3>Add Doctor to Prediit</h3>
+					<form>
+							<ul>	
+								<li><input type="text" placeholder="First name" id = "doc_firstname"/></li>
+								<li><input type="text" placeholder="Last name" id = "doc_lastname"/></li>
+								<li><input type="number" placeholder="Age" id = "doc_age"/></li>							
+										<li>
+										  <input type="radio" id="f-option" name="selector">
+										  <label for="f-option">Male</label>
+										  
+										  <div class="check"></div>
+										</li>
+										
+										<li>
+										  <input type="radio" id="s-option" name="selector">
+										  <label for="s-option">Female</label>
+										  
+										  <div class="check"><div class="inside"></div></div>
+										</li>
+							</ul>
+							<input type="button" value= "submit" id="add_doctor_button"/>
+						</form>
+
+			</div> -->
+			<!-- ends here -->
+
+			<!-- patient tab content starts here -->
+			<!-- <div id = "main_meat_add" class="tabcontent"> 
+					<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+					<h3>Add Patients to Prediit</h3>
+					<form>
+						<ul>
+							<li><input type="text" placeholder="First name" id = "firstname"/></li>
+							<li><input type="text" placeholder="Last name" id = "lastname"/></li>
+							<li><input type="number" placeholder="Age" id = "age"/></li>							
+									<li>
+									  <input type="radio" id="f-option" name="selector" id = "gender">
+									  <label for="f-option">Male</label>
+									  
+									  <div class="check"></div>
+									</li>
+									
+									<li>
+									  <input type="radio" id="s-option" name="selector" id = "gender">
+									  <label for="s-option">Female</label>
+									  
+									  <div class="check"><div class="inside"></div></div>
+									</li>
+						</ul>
+						<input type="button" value= "submit" id="add_patient_button"/>
+					</form>
+
+			</div> -->
+			<!-- ends here -->
+
+			<!-- <prediction tab content starts here -->
+			<!-- <div id = "main_meat_predict" class = "tabcontent"> 
+					<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+						<p style="text-align:center;">Choose Patient</p>
+						
+						<div id="patient_names">
+								<select>
+									<option value = "Jesse">Jesse</option>
+								</select>
+						</div>
+						<h3>Find Out Whether You Will Have a Disease</h3> -->
+
+						<!-- //tabs for the available diseases -->
+						<!-- <div id = "main_meat_tab">
+								<div>
+										<button class = "diseasetablinks" onclick="DiseaseTab(event, 'heartDisease')" id="diseasedefaultOpen">Heart Disease</button>
+										<button class = "diseasetablinks" onclick="DiseaseTab(event, 'Hepatitis')">Hepatitis</button>		
+								</div>
+						</div>
+
+						<div id = "heartDisease" class="diseasetabcontent"> 
+								<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+								<h3><span id = "become_blk">Provide information to help us predict for</span> Heart Disease</h3>
+								<div>
+									<div>
+										<form>
+											<ul>	
+													<li><input type="text" id = "h_age" placeholder="age from database"></li>
+													<li><input type="text" id = "h_trestbps" placeholder="trestbps"></li>
+													<li><input type="text" id = "h_restecg" placeholder="restecg"></li>
+													<li><input type="text" id = "h_thalach" placeholder="thalach"></li>
+													<li><input type="text" id = "h_exang" placeholder="exang"></li>
+												</ul>
+										</form>
+										
+									</div>
+									<div>
+										<form>
+											<ul>
+												<li><input type="text" id = "h_oldpeak" placeholder="oldpeak"></li>
+												<li><input type="text" id = "h_slope" placeholder="slope"></li>
+												<li><input type="text" id = "h_ca" placeholder="ca"></li>
+												<li><input type="text" id = "h_thal" placeholder="thal"></li>
+											</ul>
+											<input type="button" value="submit" id="predict_heart_button"/>
+										</form>
+									</div>
+
+									<p id= "heart_result_message">You have Heart Disease</p>
+								</div>
+						</div>
+
+						<div id = "Hepatitis" class="diseasetabcontent"> 
+								<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+								<h3><span id="become_blk">Provide information to help us predict for</span> Hepatitis</h3>
+								<div>
+									<div>
+										<form>
+											<ul>
+												<li><input type="text" id = "hep_age" placeholder="age from database"/></li>
+												<li><input type="text" id = "hep_steroid" placeholder="steroid"/></li>
+												<li><input type="text" id = "hep_bilirubin" placeholder="bilirubin"/></li>
+												<li><input type="text" id = "hep_alk" placeholder="alk_phosphate"/></li>
+											</ul>
+										</form>
+									</div>
+										<div>
+											<form>
+													<ul>
+														<li><input type="text" id = "#hep_sgot"placeholder="sgot"/></li>
+														<li><input type="text" id = "#hep_albumin" placeholder="albumin"/></li>
+														<li><input type="text" id = "#hep_protime" placeholder="protime"/></li>
+													</ul>
+													<input type="button" value="submit" id = "predict_hepatits_button"/>
+												</form>
+										</div>
+								</div>
+								<p id= "hepatitis_result_message">You have Hepatitis</p>
+
+						</div> -->
+						<!-- tabs ends here -->
+				<!-- </div>
+		</div> -->
+		
+		<!-- tabs end here -->
+		<!-- ends here -->
+
+		<footer id = "footer">
+			<div class="edges">
+				<h2 id = "contactUs">Contact Us</h2>
+				<form>
+					<input id = "text" type = "text" placeholder="Email"/>
+					<input id = "text" type = "text" placeholder="Subject"/>
+					<input id = "text" type = "text" placeholder="Message"/>
+					<input id = "button"  type = "button" value="submit"/>
+				</form>
+			</div>
+			<div id = "middle">
+				<ul>
+					<div><li><a href="#" class="fa fa-facebook"></a></li></div>
+					<div><li><a href="#" class="fa fa-twitter"></a></li></div>
+					<div><li><a href="#" class="fa fa-youtube"></a></li></div>
+
+<div><li><a href="#" class="fa fa-youtube"></a></li></div>
+					<p>Copyright c2019</p>
+				</ul>
+			</div>
+			<div class="edges">
+				<h1 style = "color:white;">PreDiit</h1>
+
+			</div>	
+
+		</footer>
+		<script type = "text/javascript" src="tabs_change.js"></script>
+		<script type = "text/javascript" src="interaction.js"></script>
+	</body>
+</html>

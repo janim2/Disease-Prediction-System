@@ -1,0 +1,200 @@
+<!DOCType HTML>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="main.css"/>
+		<title>PreDiit | Doctor</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+	</head>
+	<body>
+		<div id = "theTop">
+			<div class="edges">
+				<h1>PreDiit</h1>
+			</div>
+			<div id = "middle">
+				<ul>
+					<div><li onclick="location.href='index.html'">Home</li></div>
+					<div><li onclick="location.href='#about_message'">About</li></div>
+					<div><li onclick="location.href='#footer'">Contact</li></div>
+					<div><li onclick="location.href='login.html'">Logout</li></div>
+				</ul>
+			</div>
+			<div class="edges">
+
+			</div>	
+		</div>
+
+		<div id="welcomeImage">
+		</div>
+	
+		<div id = "welcome_message">
+			<h1>Welcome,<span> Doctor</span></h1>
+		</div>	
+
+		<div id = "about_message">
+            <h1>View Your Information</h1>
+            <div style="position: relative;left:30%;">
+                <p><span>Hospital Name:</span>    King Plana Hospital</p>
+                <p><span>Hospital Number:</span>     50ABHH88i</p>
+                <p><span>Doctor Name:</span>    Male Nortey</p>
+                <p><span>Doctor number:</span>   D4545JJU</p>
+            </div>
+        </div>
+
+        <!-- this is code for the tabs -->
+		<div id = "welcome_message">
+				<h1>Services</h1>
+		</div>	
+
+		<div id = "main_meat">
+			<div id = "main_meat_tab">
+				<div>
+						<button class = "tablinks" onclick="openCity(event,'main_meat_addDoc')" id = "defaultOpen">Consultation Session</button>
+						<button class = "tablinks" onclick="openCity(event, 'main_meat_predict')">Predict Disease</button>		
+				</div>
+			</div>
+
+			<!-- doctor tab content starts here -->
+			<div id="main_meat_addDoc" class = "tabcontent">
+					<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                    <h3>Patient Portal</h3>
+                    <p style="text-align:center;">Choose Patient</p>
+						
+						<div id="patient_names">
+								<select>
+									<option value = "Jesse">Jesse</option>
+								</select>
+						</div>
+					    <form id="predictionForm">
+							<ul>	
+                                <li><textarea style = "height: 200px;
+                                    width: 350px;
+                                    margin-top: 5px;" placeholder="Symptoms" id = "patient_symptoms"></textarea></li>
+                                 
+                                 <li><textarea style = "height: 200px;
+                                    width: 350px;
+                                    margin-top: 5px;" placeholder="Conclution"  id = "patient_conclution"></textarea></li>
+                            </ul>
+                            <input type="button"  value= "submit" id="add_doctor_button"/>
+                        </form>
+            </div>
+			<!-- ends here -->			
+
+			<!-- <prediction tab content starts here -->
+			<div id = "main_meat_predict" class = "tabcontent"> 
+					<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+						<h3>Find Out Whether A Patient Has a Disease</h3>
+
+						<!-- //tabs for the available diseases -->
+						<div id = "main_meat_tab">
+								<div>
+										<button class = "diseasetablinks" onclick="DiseaseTab(event, 'heartDisease')" id="diseasedefaultOpen">Heart Disease</button>
+										<button class = "diseasetablinks" onclick="DiseaseTab(event, 'Hepatitis')">Hepatitis</button>		
+								</div>
+						</div>
+
+						<div id = "heartDisease" class="diseasetabcontent"> 
+								<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+								<h3><span id = "become_blk">Provide information to help us predict for</span> Heart Disease</h3>
+								<div>
+									<div>
+										<form>
+											<ul>	
+													<li><input type="text" name="age" id = "h_age" placeholder="age from database"></li>
+													<li><input type="text" name="trestbps" id = "h_trestbps" placeholder="trestbps"></li>
+													<li><input type="text" name="restecg" id = "h_restecg" placeholder="restecg"></li>
+													<li><input type="text" name="thalach" id = "h_thalach" placeholder="thalach"></li>
+													<li><input type="text" name="exang" id = "h_exang" placeholder="exang"></li>
+												</ul>
+										</form>
+										
+									</div>
+									<div>
+										<form>
+											<ul>
+												<li><input type="text" name="oldpeak" id = "h_oldpeak" placeholder="oldpeak"></li>
+												<li><input type="text" name="slope" id = "h_slope" placeholder="slope"></li>
+												<li><input type="text" name="ca" id = "h_ca" placeholder="ca"></li>
+												<li><input type="text" name="thal" id = "h_thal" placeholder="thal"></li>
+											</ul>
+											<input type="button" onclick="createJSONFile()" value="submit" id="predict_heart_button"/>
+										</form>
+									</div>
+
+									<p id= "heart_result_message">You have Heart Disease</p>
+								</div>
+						</div>
+
+						<div id = "Hepatitis" class="diseasetabcontent"> 
+								<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+								<h3><span id="become_blk">Provide information to help us predict for</span> Hepatitis</h3>
+								<div>
+									<div>
+										<form>
+											<ul>
+												<li><input type="text" id = "hep_age" placeholder="age from database"/></li>
+												<li><input type="text" id = "hep_steroid" placeholder="steroid"/></li>
+												<li><input type="text" id = "hep_bilirubin" placeholder="bilirubin"/></li>
+												<li><input type="text" id = "hep_alk" placeholder="alk_phosphate"/></li>
+											</ul>
+										</form>
+									</div>
+										<div>
+											<form>
+													<ul>
+														<li><input type="text" id = "#hep_sgot"placeholder="sgot"/></li>
+														<li><input type="text" id = "#hep_albumin" placeholder="albumin"/></li>
+														<li><input type="text" id = "#hep_protime" placeholder="protime"/></li>
+													</ul>
+													<input type="button"  value="submit" id = "predict_hepatits_button"/>
+												</form>
+										</div>
+								</div>
+								<p id= "hepatitis_result_message">You have Hepatitis</p>
+
+						</div>
+						<!-- tabs ends here -->
+				</div>
+		</div>
+		
+		<!-- tabs end here -->
+		<!-- ends here -->
+            
+        <div style="margin-bottom: 50px;">
+
+        </div>
+
+
+		<footer id = "footer">
+			<div class="edges">
+				<h2 id = "contactUs">Contact Us</h2>
+				<form>
+					<input id = "text" type = "text" placeholder="Email"/>
+					<input id = "text" type = "text" placeholder="Subject"/>
+					<input id = "text" type = "text" placeholder="Message"/>
+					<input id = "button"  type = "button" value="submit"/>
+				</form>
+			</div>
+			<div id = "middle">
+				<ul>
+					<div><li><a href="#" class="fa fa-facebook"></a></li></div>
+					<div><li><a href="#" class="fa fa-twitter"></a></li></div>
+					<div><li><a href="#" class="fa fa-youtube"></a></li></div>
+
+<div><li><a href="#" class="fa fa-youtube"></a></li></div>
+					<p>Copyright c2019</p>
+				</ul>
+			</div>
+			<div class="edges">
+				<h1 style = "color:white;">PreDiit</h1>
+			</div>	
+
+		</footer>
+		<script type = "text/javascript" src="tabs_change.js"></script>
+		<script type = "text/javascript" src="interaction.js"></script>
+	</body>
+</html>

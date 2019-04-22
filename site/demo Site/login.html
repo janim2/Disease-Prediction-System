@@ -1,0 +1,213 @@
+<!DOCType HTML>
+
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        
+		<link rel="stylesheet" href="main.css"/>
+		<title>PreDiit | Login</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="./node_modules/web3/dist/web3.min.js"></script>
+<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> -->
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script> -->
+	</head>
+	<body>
+		<div id = "theTop">
+			<div class="edges">
+				<h1>PreDiit</h1>
+			</div>  
+			<div id = "middle">
+				<ul>
+					<div><li onclick="location.href='index.html'">Home</li></div>
+					<div><li onclick="location.href='index.html'">About</li></div>
+					<div><li onclick="location.href='index.html'">Contact</li></div>
+					<div><li onclick="location.href='login.html'">Login</li></div>
+				</ul>
+			</div>
+			<div class="edges">
+
+			</div>	
+        </div>
+        
+        <div id="loginImage">
+            </div>
+
+		<div id = "register_message">
+			<h1>Login, OR <span>Register</span> a Prediit User.</h1>
+		</div>	
+
+		<!-- this is code for the tabs -->
+
+		<div id = "welcome_message">
+				<h1>Get Started</h1>
+		</div>	
+
+		<div id = "main_meat">
+			<div id = "main_meat_tab">
+				<div>
+						<button class = "tablinks" onclick="openCity(event,'main_meat_login')" id = "defaultOpen">Login</button>
+						<button class = "tablinks" onclick="openCity(event, 'main_meat_register')">Register</button>
+				</div>
+			</div>
+
+			<!-- login tab content starts here -->
+			<div id="main_meat_login" class = "tabcontent">
+					<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+					<h3>Login to Prediit</h3>
+					<form>
+							<ul>	
+								<li><input type="number" placeholder="Phone Number" id = "phoneNumber" required/></li>
+								<li><input type="password" placeholder="Password" id = "password" required/></li>
+							</ul>
+							<input type="button" value= "Login" id="login"/>
+                    </form>
+
+                    <!-- //ring capture verification -->
+                    <div id="xyz" data-widget data-app="yqi2o5izi1ymu6ovipon" data-locale="en" data-mode="verification"
+                        data-type="dual">
+
+                    </div>
+
+                    <!-- ends here -->
+                    <p id= "login_message">Login Failed. Try Again</p>
+                </div>
+			<!-- login ends here -->
+
+				<!-- <register tab content starts here -->
+				<div id = "main_meat_register" class = "tabcontent"> 
+						<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+						<h3>Join the future of Health Care.</h3>
+
+							<!-- //tabs for the available diseases -->
+							<div id = "main_meat_tab">
+									<div>
+											<button class = "diseasetablinks" onclick="DiseaseTab(event, 'adduser')" id="diseasedefaultOpen">Add User</button>
+											<button class = "diseasetablinks" onclick="DiseaseTab(event, 'addHospital')">Add Hospital</button>		
+									</div>
+							</div>
+
+							<div id = "adduser" class="diseasetabcontent"> 
+									<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+									<h3><span id = "become_blk">Provide us with the following information</span> Prediit</h3>
+									<div>
+										<div>
+											<form>
+												<ul>	
+		                                            <li><img src="Images/male.png"/></li>
+														<li><input type="text" id = "user_name" placeholder="Full name"></li>
+		                                            <li><input type="age" id = "user_age" placeholder="Age"></li>
+		                                            
+		                                            <!-- gender checkbox goes here -->
+		                                            <li>
+		                                                    <input type="radio" id="user_f_option" name="selector">
+		                                                    <label for="f-option">Male</label>
+		                                                    
+		                                                    <div class="check"></div>
+		                                                  </li>
+		                                                  
+		                                                  <li>
+		                                                    <input type="radio" id="user_s-option" name="selector">
+		                                                    <label for="s-option">Female</label>
+		                                                    
+		                                                    <div class="check"><div class="inside"></div></div>
+		                                                  </li>
+
+		                                            <!-- <ends here -->
+													 </ul>
+		                                </form>
+		                            </div>
+
+		                            <div>
+		                                <form>
+		                                        <ul>	
+		                                                <li><input type="text" id = "user_NHISno" placeholder="NHIS number"></li>
+		                                                <li><input type="email" id = "user_email" placeholder="Email"></li>
+		                                                <li><input type="password" id = "user_password" placeholder="Password"></li>
+		                                                <li><input type="password" id = "user_confirm_password" placeholder="Confirm Password"></li>
+		                                            </ul>
+		                                            <input type="button" value="Join" id="adduser"/>
+		                                    </form>
+		                                    <p id= "user_joined_message">You have Joined Prediit.</p>
+		                            </div>
+		                        </div>
+							</div>
+
+							<div id = "addHospital" class="diseasetabcontent"> 
+									<span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+									<h3><span id="become_blk">Add a hospital to</span> Prediit</h3>
+									<div>
+										<div>
+											<form>
+												<ul>
+													<li><input type="text" id = "hospital_name" placeholder="Hospital Name"/></li>
+													<li><input type="text" id = "hospital_unique" placeholder="Unique Hospital Number"/></li>
+													<li><input type="text" id = "hospital_Password" placeholder="Password"/></li>
+		        
+												</ul>
+											</form>
+										</div>
+											<div>
+												<form>
+														<ul>
+		                                                <p>Add Doctors to hospital<img src="Images/addButton.png" height="15px" width="15px" id="add_more_" style="margin-left: 10px"></img>
+		                                                </p>
+		                                                 <!-- <add doctor fields starts here -->
+		                    
+		                                                 <!-- will add item here onbutton click -->
+		                                                 <div id="tbox_div">
+
+		                                                </div>
+		                                                 <!-- ends here -->
+
+
+		                                                 <!-- <li><input type="text" id = "doc_number" placeholder="Doctor Unique Number"/></li> -->
+		                                                 <!-- <ends here -->
+														</ul>
+														<input type="button" value="Add Hospital" id = "add_hospital"/>
+													</form>
+											</div>
+									</div>
+									<p id= "hospital_added_message">You have Successfully added a Hospital.</p>
+							</div>
+							<!-- tabs ends here -->
+					</div>
+			</div>
+			
+			<!-- tabs end here -->
+			<!-- ends here -->
+
+		<footer id = "footer">
+			<div class="edges">
+				<h2 id = "contactUs">Contact Us</h2>
+				<form>
+					<input id = "text" type = "text" placeholder="Email"/>
+					<input id = "text" type = "text" placeholder="Subject"/>
+					<input id = "text" type = "text" placeholder="Message"/>
+					<input id = "button"  type = "button" value="submit"/>
+				</form>
+			</div>
+			<div id = "middle">
+				<ul>
+					<div><li><a href="#" class="fa fa-facebook"></a></li></div>
+					<div><li><a href="#" class="fa fa-twitter"></a></li></div>
+					<div><li><a href="#" class="fa fa-youtube"></a></li></div>
+
+<div><li><a href="#" class="fa fa-youtube"></a></li></div>
+					<p>Copyright c2019</p>
+				</ul>
+			</div>
+			<div class="edges">
+				<h1 style = "color:white;">PreDiit</h1>
+
+			</div>	
+
+        </footer>
+        <script type="text/javascript" charset='UTF-8' src="//cdn.ringcaptcha.com/widget/v2/bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type = "text/javascript" src="tabs_change.js"></script>
+        <script type = "text/javascript" src="interaction.js"></script>
+        <script type = "text/javascript" src="controls.js"></script>
+
+	</body>
+</html>
