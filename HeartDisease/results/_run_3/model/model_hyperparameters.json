@@ -1,0 +1,252 @@
+{
+    "combiner": {
+        "type": "concat"
+    },
+    "input_features": [
+        {
+            "name": "age",
+            "tied_weights": null,
+            "type": "numerical"
+        },
+        {
+            "name": "trestbps",
+            "tied_weights": null,
+            "type": "numerical"
+        },
+        {
+            "name": "restecg",
+            "tied_weights": null,
+            "type": "binary"
+        },
+        {
+            "name": "thalach",
+            "tied_weights": null,
+            "type": "category",
+            "vocab": [
+                "<UNK>",
+                "158",
+                "179",
+                "144",
+                "132",
+                "157",
+                "174",
+                "143",
+                "142",
+                "175",
+                "186",
+                "156",
+                "172",
+                "151",
+                "170",
+                "163",
+                "155",
+                "161",
+                "182",
+                "173",
+                "146",
+                "154",
+                "147",
+                "169",
+                "167",
+                "166",
+                "159",
+                "194",
+                "115",
+                "145",
+                "96",
+                "130",
+                "118",
+                "148",
+                "162",
+                "137",
+                "114",
+                "131",
+                "185",
+                "168",
+                "171",
+                "120",
+                "187",
+                "122",
+                "113",
+                "126",
+                "152",
+                "112",
+                "71",
+                "111",
+                "129",
+                "160",
+                "125",
+                "105",
+                "178",
+                "123",
+                "140",
+                "103",
+                "177",
+                "134",
+                "150",
+                "108"
+            ]
+        },
+        {
+            "name": "exang",
+            "tied_weights": null,
+            "type": "numerical"
+        },
+        {
+            "name": "oldpeak",
+            "tied_weights": null,
+            "type": "binary"
+        },
+        {
+            "name": "slope",
+            "tied_weights": null,
+            "type": "numerical"
+        },
+        {
+            "name": "ca",
+            "tied_weights": null,
+            "type": "category",
+            "vocab": [
+                "<UNK>",
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "name": "thal",
+            "tied_weights": null,
+            "type": "category",
+            "vocab": [
+                "<UNK>",
+                "2",
+                "3",
+                "1"
+            ]
+        }
+    ],
+    "output_features": [
+        {
+            "dependencies": [],
+            "loss": {
+                "confidence_penalty": 0,
+                "robust_lambda": 0,
+                "threshold": 0.5,
+                "weight": 1
+            },
+            "name": "target",
+            "reduce_dependencies": "sum",
+            "reduce_input": "sum",
+            "threshold": 0.5,
+            "type": "binary",
+            "weight": 1
+        }
+    ],
+    "preprocessing": {
+        "bag": {
+            "fill_value": "",
+            "format": "space",
+            "lowercase": 10000,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": false
+        },
+        "binary": {
+            "fill_value": 0,
+            "missing_value_strategy": "fill_with_const"
+        },
+        "category": {
+            "fill_value": "<UNK>",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "force_split": false,
+        "image": {
+            "missing_value_strategy": "backfill"
+        },
+        "numerical": {
+            "fill_value": 0,
+            "missing_value_strategy": "fill_with_const"
+        },
+        "sequence": {
+            "fill_value": "",
+            "format": "space",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 20000,
+            "padding": "right",
+            "padding_symbol": "<PAD>",
+            "sequence_length_limit": 256,
+            "unknown_symbol": "<UNK>"
+        },
+        "set": {
+            "fill_value": "",
+            "format": "space",
+            "lowercase": false,
+            "missing_value_strategy": "fill_with_const",
+            "most_common": 10000
+        },
+        "split_probabilities": [
+            0.7,
+            0.1,
+            0.2
+        ],
+        "stratify": null,
+        "text": {
+            "char_format": "characters",
+            "char_most_common": 70,
+            "char_sequence_length_limit": 1024,
+            "fill_value": "",
+            "lowercase": true,
+            "missing_value_strategy": "fill_with_const",
+            "padding": "right",
+            "padding_symbol": "<PAD>",
+            "unknown_symbol": "<UNK>",
+            "word_format": "space_punct",
+            "word_most_common": 20000,
+            "word_sequence_length_limit": 256
+        },
+        "timeseries": {
+            "fill_value": "",
+            "format": "space",
+            "missing_value_strategy": "fill_with_const",
+            "padding": "right",
+            "padding_value": 0,
+            "timeseries_length_limit": 256
+        }
+    },
+    "random_seed": 42,
+    "training": {
+        "batch_size": 128,
+        "bucketing_field": null,
+        "decay": false,
+        "decay_rate": 0.96,
+        "decay_steps": 10000,
+        "dropout_rate": 0.0,
+        "early_stop": 3,
+        "epochs": 200,
+        "gradient_clipping": null,
+        "increase_batch_size_on_plateau": 0,
+        "increase_batch_size_on_plateau_max": 512,
+        "increase_batch_size_on_plateau_patience": 5,
+        "increase_batch_size_on_plateau_rate": 2,
+        "learning_rate": 0.001,
+        "learning_rate_warmup_epochs": 5,
+        "optimizer": {
+            "beta1": 0.9,
+            "beta2": 0.999,
+            "epsilon": 1e-08,
+            "type": "adam"
+        },
+        "reduce_learning_rate_on_plateau": 0,
+        "reduce_learning_rate_on_plateau_patience": 5,
+        "reduce_learning_rate_on_plateau_rate": 0.5,
+        "regularization_lambda": 0,
+        "regularizer": "l2",
+        "staircase": false,
+        "validation_field": "combined",
+        "validation_measure": "loss"
+    }
+}
