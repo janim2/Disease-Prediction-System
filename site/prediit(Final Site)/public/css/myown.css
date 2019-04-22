@@ -1,0 +1,756 @@
+@font-face {
+	font-family: 'Chunky';
+	src: url("Fonts/chunky.ttf?srf3rx") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: 'PooCorny';
+	src: url("Fonts/PooCorny.ttf?srf3rx") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  
+  @font-face {
+	font-family: 'Caviar_Dreams_Bold';
+	src: url("Fonts/Caviar-Dreams/Caviar_Dreams_Bold.ttf?srf3rx") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  @font-face {
+	font-family: 'CaviarDreams';
+	src: url("Fonts/Caviar-Dreams/CaviarDreams.ttf?srf3rx") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+  }
+  
+  
+  
+  body{
+	  margin:0px;
+	  background:#F2F2F2;
+  }
+  
+  #theTop{
+  
+	  width: 100%;
+	  height: 80px;
+  
+	  margin:0px;
+  }
+  
+  .edges{
+	  width: 15%;
+	  height: 0px auto;
+	  float:left;
+  }
+  
+  .edges h1{
+	  font-family:Chunky;
+	  font-size: 40px;
+	  margin-left: 20px;
+  }
+  
+  .edges h1:hover{
+	  color: #3e6ad4;
+  }
+  
+  #middle{
+	  width:70%;
+	  height: 0px auto;
+	  float:left;
+  }
+  
+  #middle ul{
+	  text-align:center;
+  }
+  
+  #middle ul div{
+	  display: inline-block;
+	  width: 200px;
+  }
+  
+  #middle ul div:hover{
+	  background: #3e6ad4;
+	  color:white;
+  }
+  #middle ul div li{
+	  list-style:none;
+	  text-align:center;
+	  font-family:PooCorny;
+	  font-size: 30px;
+	  text-shadow: 2px 2px blue;
+  }
+  
+  #middle p{
+	  color:white;
+	  font-size:20px;
+	  font-family:CaviarDreams;	
+  }
+  
+  #welcomeImage{
+	  height: 500px;
+	  width: 100%;
+	  background: url(Images/welcomeImage.jpg) no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size:cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+  }
+  
+  #welcomeImage img{
+	  height:100%;
+	  width: 100%;
+	  
+  }
+  
+  #welcome_message{
+	  font-family:Caviar_Dreams_Bold;
+	  color: #3e6ad4;
+  }
+  
+  #welcome_message h1{
+	  text-align:center;
+	  font-size: 25px
+  }
+  
+  #welcome_message h1 span{
+	  font-family: CaviarDreams;
+	  font-size:20px;
+	  color:black;
+	  text-align: center;
+  }
+  
+  #about_message{
+	  font-family:Caviar_Dreams_Bold;
+	  color: #3e6ad4;
+	  background: white;
+	  margin-left: 80px;
+	  margin-right: 80px;
+	  padding: 10px;
+	  border-radius: 30px;
+  }
+  
+  #about_message div{
+	  width: 80%;
+	  position: relative;
+	  left: 14%;
+	  margin: 0px auto;
+  }
+  
+  #about_message div div p[id = first]{
+	  font-weight: bold;
+  }
+  
+  #about_message div div{
+	  width: 20%;
+	  margin: 0px auto;
+	  float: left;
+  }
+  
+  #about_message h1{
+	  text-align:center;
+	  font-size: 25px
+  }
+  
+  #about_message p{
+	  font-family: CaviarDreams;
+	  font-size:20px;
+	  color:black;
+	  margin-left: 20dsp;
+	  margin-right: 20dp;
+  }
+  
+  #about_message span{
+	  font-weight: bold;
+  }
+  
+  
+  #footer{
+	  height: 260px;
+	  width: 100%;
+	  float: left;
+	  background: black;
+  }
+  
+  /* Facebook */
+  .fa-facebook {
+	color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+	color: white;
+  }
+  
+  .fa-youtube{
+	  color:white;
+  }
+  
+  .fa-instagram{
+	  color:white;
+  }
+  
+  #contactUs{
+	  color: white;
+	  font-family:Caviar_Dreams_Bold;
+	  margin-left: 20px;
+  }
+  
+  #text{
+	  border-radius: 5px;
+	  height:30px;
+	  margin-left:20px;
+	  margin-top:10px;
+  }
+  
+  #button{
+	  background: #3e6ad4;
+	  color:white;
+	  border-radius:5px;
+	  margin-left:20px;
+	  margin-top: 10px;
+	  height: 40px;
+	  width: 100px;
+	  font-family: CaviarDreams;
+	  font-size:20px;
+  }
+  
+  #main_meat{
+	  height: 600px;
+	  width: 100%;
+	  /* background: green; */
+  }
+  
+  #main_meat_tab{
+	  overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+  
+  }
+  
+  .tabcontent {
+	  display: none;
+	  padding: 6px 12px;
+	  border: 1px solid #ccc;
+	  border-top: none;
+	  height: 100%;
+	}
+  
+	/* Style the buttons inside the tab */
+  #main_meat_tab button {
+	  background-color: inherit;
+	  float: left;
+	  border: none;
+	  outline: none;
+	  cursor: pointer;
+	  padding: 14px 10px;
+	  transition: 0.3s;
+	  font-size: 17px;
+	}
+  
+	#main_meat_tab div{
+		  width: 28%;
+		  position: relative;
+		  left: 45%;
+	}
+	
+	/* Change background color of buttons on hover */
+	#main_meat_tab button:hover {
+	  background-color: #ddd;
+	}
+	
+	/* Create an active/current tablink class */
+	#main_meat_tab button.active {
+	  background-color: #ccc;
+	}
+  
+	/* Style the close button */
+  .topright {
+	  float: right;
+	  cursor: pointer;
+	  font-size: 28px;
+	}
+	
+	  .topright:hover {color: red;}
+	  
+  /* main meat add doctor starts here */
+  
+  #main_meat_addDoc h3{
+	  text-align: center;
+  font-family:Caviar_Dreams_Bold;
+  color: #3e6ad4;
+  }
+  
+  #main_meat_addDoc form ul{
+  text-align: center;
+  }
+  
+  #main_meat_addDoc form ul li{
+	  text-decoration: none;
+	  list-style: none;
+  }
+  
+  #main_meat_addDoc form ul li input{
+	  height: 30px;
+	  width: 300px;
+	  margin-top: 5px;
+  }
+	  /* ends here */
+  
+  
+	  /* main meat_add patient starts here */
+	#main_meat_add h3{
+		text-align: center;
+	  font-family:Caviar_Dreams_Bold;
+	  color: #3e6ad4;
+	}
+  
+	#main_meat_predict h3{
+	  text-align: center;
+	  font-family:Caviar_Dreams_Bold;
+	  color: #3e6ad4;
+	}
+  
+	#main_meat_add form ul{
+	  text-align: center;
+	}
+  
+	#main_meat_add form ul li{
+		text-decoration: none;
+		list-style: none;
+	}
+  
+	#main_meat_add form ul li input{
+		height: 30px;
+		width: 300px;
+		margin-top: 5px;
+	}
+  
+  
+	/* check boxes for gender */
+  
+	#f-option{
+	  color: #AAAAAA;
+	  display: block;
+		border-bottom: 1px solid #333;
+	}
+	
+	ul li input[type=radio]{
+	  position: absolute;
+	  visibility: hidden;
+	}
+	
+	ul li label{
+	  display: block;
+	  position: relative;
+	  font-weight: 300;
+	  font-size: 1.35em;
+	  margin: 10px auto;
+	  height: 30px;
+	  z-index: 9;
+	  cursor: pointer;
+	  -webkit-transition: all 0.25s linear;
+	}
+	
+	ul li:hover label{
+		color: #FFFFFF;
+	}
+	
+	ul li .check{
+	  display: block;
+	  position: absolute;
+	  border: 5px solid #AAAAAA;
+	  border-radius: 100%;
+	  height: 25px;
+	  width: 25px;
+	  top: 30px;
+	  left: 20px;
+		z-index: 5;
+		transition: border .25s linear;
+		-webkit-transition: border .25s linear;
+	}
+	
+	ul li:hover .check {
+	  border: 5px solid #FFFFFF;
+	}
+	
+	ul li .check::before {
+	  display: block;
+	  position: absolute;
+		content: '';
+	  border-radius: 100%;
+	  height: 15px;
+	  width: 15px;
+	  top: 5px;
+		left: 5px;
+	  margin: auto;
+	}
+	
+	input[type=radio]:checked ~ .check {
+	  border: 5px solid #0DFF92;
+	}
+	
+	input[type=radio]:checked ~ .check::before{
+	  background: #0DFF92;
+	}
+	
+	input[type=radio]:checked ~ label{
+	  color: #0DFF92;
+	}
+  
+	input[type=button]{
+		width: 150px;
+		height: 50px;
+		font-family: CaviarDreams;
+		font-size: 20px;
+		color: #3e6ad4;
+		position: relative;
+		left: 46%;
+		right:46%;
+	  }
+	  
+	  #become_blk{
+		  color:black;
+		font-family: CaviarDreams;
+  
+	  }
+  
+	  #heartDisease div{
+		  width: 80%;
+		  margin: 0px auto;
+		  /* background: red; */
+	  }
+  
+	  #heartDisease div div{
+		  width: 45%;
+		  float: left;
+		  text-align: center;
+	  }
+	  
+	  #heartDisease div ul li{
+		  font-size: 15px;
+		  list-style: none;
+	  }
+  
+	  #heartDisease input[type=text]{
+		  height: 30px;
+		width: 300px;
+		margin-top: 5px;
+	  }
+  
+	  #heartDisease input[type=button]{
+		width: 150px;
+		height: 50px;
+		font-family: CaviarDreams;
+		font-size: 20px;
+		color: #3e6ad4;
+		position: relative;
+		left: 6%;
+		right:46%;
+	  }
+  
+  #heart_result_message{
+	  font-family: CaviarDreams;
+	  font-size: 21px;
+	  position: relative;
+	  top:20px;
+	  color: green;
+  }
+  
+  /* hepatitis tab starts here*/
+  
+  #Hepatitis div{
+	  width: 80%;
+	  margin: 0px auto;
+  }
+  
+  #Hepatitis div div{
+	  width: 45%;
+	  float: left;
+	  text-align: center;
+  }
+  
+  #Hepatitis div ul li{
+	  font-size: 15px;
+	  list-style: none;
+  }
+  
+  #Hepatitis input[type=text]{
+	  height: 30px;
+	  width: 300px;
+	  margin-top: 5px;
+  }
+  
+  #Hepatitis input[type=button]{
+	  width: 150px;
+	  height: 50px;
+	  font-family: CaviarDreams;
+	  font-size: 20px;
+	  color: #3e6ad4;
+	  position: relative;
+	  left: 6%;
+	  right:46%;
+  }
+  
+  #hepatitis_result_message{
+  font-family: CaviarDreams;
+  font-size: 21px;
+  position: relative;
+  top:20px;
+  color: green;
+  }
+  
+  /* it ends here */
+  
+  #patient_names{
+	  text-align: center;
+  }
+  
+  #patient_names select{
+	  width: 300px;
+	  height: 50px;
+	  border-radius: 10px;
+	  font-size: 20px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* new css to start here */
+  
+  #register_message{
+	  font-family:Caviar_Dreams_Bold;
+	  color: #3e6ad4;
+  }
+  
+  #register_message	h1{
+	  text-align:center;
+	  font-size: 25px;
+  }
+  
+  #register_message h1 span{
+	  font-family: CaviarDreams;
+	  font-size:20px;
+	  color:black;
+  }
+  
+  
+  /* login message; */
+  
+  #login_message{
+	  text-align: center;
+	  color: red;
+  }
+  
+  /* main_meat_ogin starths here */
+  
+  #main_meat_login h3{
+	  text-align: center;
+  font-family:Caviar_Dreams_Bold;
+  color: #3e6ad4;
+  }
+  
+  #main_meat_login form ul{
+  text-align: center;
+  }
+  
+  #main_meat_login form ul li{
+	  text-decoration: none;
+	  list-style: none;
+  }
+  
+  #main_meat_login form ul li input{
+	  height: 30px;
+	  width: 300px;
+	  margin-top: 5px;
+  }
+	  /* ends here */
+  
+  
+	  /* main meat_add patient starts here */
+	#main_meat_login h3{
+		text-align: center;
+	  font-family:Caviar_Dreams_Bold;
+	  color: #3e6ad4;
+	}
+  
+	#main_meat_login form ul{
+	  text-align: center;
+	}
+  
+	#main_meat_login form ul li{
+		text-decoration: none;
+		list-style: none;
+	}
+  
+	#main_meat_login form ul li input{
+		height: 30px;
+		width: 300px;
+		margin-top: 5px;
+	  }
+	  
+  
+	  /* main_meat_register */
+	  #main_meat_register h3{
+		  text-align: center;
+		  font-family:Caviar_Dreams_Bold;
+		  color: #3e6ad4;
+		  }
+  
+  
+  /* add user */
+  
+  #adduser div{
+	  width: 80%;
+	  margin: 0px auto;
+	  /* background: red; */
+  }
+  
+  #adduser img{
+	  height: 80px;
+	  width : 80px;
+  }
+  
+  #adduser div div{
+	  width: 45%;
+	  float: left;
+	  text-align: center;
+  }
+  
+  #adduser div ul li{
+	  font-size: 15px;
+	  list-style: none;
+  }
+  
+  #adduser input[type=text]{
+	  height: 30px;
+	  width: 300px;
+	  margin-top: 5px;
+  }
+  
+  #adduser input[type=button]{
+	  width: 150px;
+	  height: 50px;
+	  font-family: CaviarDreams;
+	  font-size: 20px;
+	  color: #3e6ad4;
+	  position: relative;
+	  left: 6%;
+	  right:46%;
+  }
+	  
+  
+  /* add hospital  */
+  #addHospital div{
+	  width: 80%;
+	  margin: 0px auto;
+  }
+  
+  #addHospital div div{
+	  width: 45%;
+	  float: left;
+	  text-align: center;
+  }
+  
+  #addHospital div ul li{
+	  font-size: 15px;
+	  list-style: none;
+  }
+  
+  #addHospital input[type=text]{
+	  height: 30px;
+	  width: 300px;
+	  margin-top: 5px;
+  }
+  
+  #addHospital input[type=button]{
+	  width: 150px;
+	  height: 50px;
+	  font-family: CaviarDreams;
+	  font-size: 20px;
+	  color: #3e6ad4;
+	  position: relative;
+	  left: 6%;
+	  right:46%;
+  }
+  
+  #addHospital{
+  font-family: CaviarDreams;
+  font-size: 21px;
+  position: relative;
+  top:20px;
+  color: green;
+  }
+  
+  /* it ends here */
+  
+  
+  /* register user input */
+  input[type=age]{
+		  height: 30px;
+		  width: 300px;
+		  margin-top: 5px;
+  }
+  
+  input[type=email]{
+	  height: 30px;
+	  width: 300px;
+	  margin-top: 5px;
+  }
+  
+  input[type=password]{
+	  height: 30px;
+	  width: 300px;
+	  margin-top: 5px;
+  }
+  
+  
+  /* add more options place */
+  #tbox_div{
+	  width: 100%;
+	  height: auto;
+  }
+  
+  
+  #loginImage{
+	  height: 500px;
+	  width: 100%;
+	  background: url(Images/login.jpg) no-repeat;
+	  -webkit-background-size: cover;
+	  -moz-background-size:cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+  }
+  
+  #loginImage img{
+	  height:100%;
+	  width: 100%;
+	  
+  }
+  
+  
+  /* login message */
+  #login_message{
+	  display: none;
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
