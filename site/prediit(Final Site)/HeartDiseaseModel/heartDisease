@@ -1,0 +1,11 @@
+age - numerical
+trestbps - numerical
+fbs - binary
+restecg - category
+thalach - numerical
+exang - binary
+oldpeak - numerical
+slope - categorical
+ca - categorical
+thal - categorical
+target - binary
