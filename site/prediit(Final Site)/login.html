@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+<head>
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="Colorlib">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Prediit | Login</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+        <!--
+        CSS
+        ============================================= -->
+        <link rel="stylesheet" href="/css/linearicons.css">=
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/magnific-popup.css">
+        <link rel="stylesheet" href="/css/nice-select.css">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href= "/css/myown.css"/>
+    </head>
+    <body>
+
+        <!-- Start Header Area -->
+        <header class="default-header">
+            <div class="container">
+                <div class="header-wrap">
+                    <div class="header-top d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="#home"><h1>Prediit | Login</h1></a>
+                        </div>
+                        <div class="main-menubar d-flex align-items-center">
+                            <nav class="hide">
+                                <a href="/">Home</a>
+                                <a href="#main_meat">Login</a>
+                                <a href="#footer">Contact Us</a>
+                            </nav>
+                            <div class="menu-bar"><span class="lnr lnr-menu"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header Area -->
+
+        <!-- start banner Area -->
+        <section class="banner-area relative" id="home" style="margin-bottom:50px;">
+            <div class="container">
+                    <div class="row fullscreen align-items-center justify-content-center">
+                        <div class="banner-content col-lg-6 col-md-12">
+                            <h1 class="text-uppercase">
+                                Health care of the future<br>
+                            </h1>
+                            <p>
+                                Feel Free To Join
+                            </p>
+                            <button class="primary-btn2 mt-20 text-uppercase ">Get Started<span class="lnr lnr-arrow-right"></span></button>
+                        </div>
+                        <div class="col-lg-6 d-flex align-self-end img-right">
+                            <img class="img-fluid" src="/img/header-img.png" alt="">
+                        </div>
+                    </div>
+            </div>
+        </section>
+        <!-- End banner Area -->
+
+
+        <!-- other login starts here -->
+
+        <div id = "main_meat">
+                <div id = "main_meat_tab">
+                    <div>
+                            <button class = "tablinks" onclick="openCity(event,'main_meat_login')" id = "defaultOpen">Login</button>
+                            <button class = "tablinks" onclick="openCity(event, 'main_meat_register')">Register</button>
+                    </div>
+                </div>
+    
+                <!-- login tab content starts here -->
+                <div id="main_meat_login" class = "tabcontent">
+                        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                        <h3>Login to Prediit</h3>
+                        <form>
+                                <ul>	
+                                    <li><input type="number" placeholder="Phone Number" id = "phoneNumber" required/></li>
+                                    <li><input type="password" placeholder="Password" id = "password" required/></li>
+                                </ul>
+                                <input type="button" value= "Login" id="login"/>
+                        </form>
+    
+                        <!-- //ring capture verification -->
+                        <div id="xyz" data-widget data-app="yqi2o5izi1ymu6ovipon" data-locale="en" data-mode="verification"
+                            data-type="dual">
+    
+                        </div>
+    
+                        <!-- ends here -->
+                        <p id= "login_message">Login Failed. Try Again</p>
+                    </div>
+                <!-- login ends here -->
+
+
+                <!-- own login starts here -->
+    
+                    <!-- <register tab content starts here -->
+                    <div id = "main_meat_register" class = "tabcontent"> 
+                            <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                            <h3>Join the future of Health Care.</h3>
+    
+                                <!-- //tabs for the available diseases -->
+                                <div id = "main_meat_tab">
+                                        <div>
+                                                <button class = "diseasetablinks" onclick="DiseaseTab(event, 'adduser')" id="diseasedefaultOpen">Add User</button>
+                                                <button class = "diseasetablinks" onclick="DiseaseTab(event, 'addHospital')">Add Hospital</button>		
+                                        </div>
+                                </div>
+    
+                                <div id = "adduser" class="diseasetabcontent"> 
+                                        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                                        <h3><span id = "become_blk">Provide us with the following information</span> Prediit</h3>
+                                        <div>
+                                            <div>
+                                                <form>
+                                                    <ul>	
+                                                        <li><img src="/img/male.png"/></li>
+                                                            <li><input type="text" id = "user_name" placeholder="Full name"></li>
+                                                        <li><input type="age" id = "user_age" placeholder="Age"></li>
+                                                        
+                                                        <!-- gender checkbox goes here -->
+                                                        <li>
+                                                                <input type="radio" id="user_f_option" name="selector">
+                                                                <label for="f-option">Male</label>
+                                                                
+                                                                <div class="check"></div>
+                                                              </li>
+                                                              
+                                                              <li>
+                                                                <input type="radio" id="user_s-option" name="selector">
+                                                                <label for="s-option">Female</label>
+                                                                
+                                                                <div class="check"><div class="inside"></div></div>
+                                                              </li>
+    
+                                                        <!-- <ends here -->
+                                                         </ul>
+                                        </div>
+    
+                                        <div>
+                                                    <ul>	
+                                                            <li><input type="text" id = "user_NHISno" placeholder="NHIS number"></li>
+                                                            <li><input type="email" id = "user_email" placeholder="Email"></li>
+                                                            <li><input type="password" id = "user_password" placeholder="Password"></li>
+                                                            <li><input type="password" id = "user_confirm_password" placeholder="Confirm Password"></li>
+                                                        </ul>
+                                                        <input type="button" onclick="addUser()" value="Join" id="adduser"/>
+                                                </form>
+                                                <p id= "user_joined_message">You have Joined Prediit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div id = "addHospital" class="diseasetabcontent"> 
+                                        <span onclick="this.parentElement.style.display='none'" class="topright">&times</span>
+                                        <h3><span id="become_blk">Add a hospital to</span> Prediit</h3>
+                                        <div>
+                                            <div>
+                                                <form>
+                                                    <ul>
+                                                        <li><input type="text" id = "hospital_name" placeholder="Hospital Name"/></li>
+                                                        <li><input type="text" id = "hospital_unique" placeholder="Unique Hospital Number"/></li>
+                                                        <li><input type="text" id = "hospital_Password" placeholder="Password"/></li>
+                    
+                                                    </ul>
+                                        
+                                            </div>
+                                                <div>
+                                                   
+                                                            <ul>
+                                                            <p>Add Doctors to hospital<img src="/img/addButton.png" height="15px" width="15px" id="add_more_" style="margin-left: 10px"></img>
+                                                            </p>
+                                                             <!-- <add doctor fields starts here -->
+                                
+                                                             <!-- will add item here onbutton click -->
+                                                             <div id="tbox_div">
+    
+                                                            </div>
+                                                             <!-- ends here -->
+    
+    
+                                                             <!-- <li><input type="text" id = "doc_number" placeholder="Doctor Unique Number"/></li> -->
+                                                             <!-- <ends here -->
+                                                            </ul>
+                                                            <input type="button" onclick="addHospital()" value="Add Hospital" id = "add_hospital"/>
+                                                        </form>
+                                                </div>
+                                        </div>
+                                        <p id= "hospital_added_message">You have Successfully added a Hospital.</p>
+                                </div>
+                                <!-- tabs ends here -->
+                        </div>
+                </div>
+                
+                <!-- tabs end here -->
+                <!-- ends here -->
+
+        
+
+        
+<!-- start footer Area -->
+<footer class="footer-area section-gap" style="margin-top: 50px;">
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-lg-4  col-md-6">
+                    <div class="single-footer-widget mail-chimp">
+                        <h6 class="mb-20">Contact Us</h6>
+                        <p>
+                            KNUST, Kumasi Ghana
+                        </p>
+                        <h3>233-548-666-434</h3>
+                        <h3>233-268-977-129</h3>
+                    </div>
+                </div>
+                <div class="col-lg-6  col-md-12">
+                    <div class="single-footer-widget newsletter">
+                        <h6>Newsletter</h6>
+                        <p>You can trust us</p>
+                        <div id="mc_embed_signup">
+                            <form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="form-inline">
+
+                                <div class="form-group row" style="width: 100%">
+                                    <div class="col-lg-8 col-md-12">
+                                        <input name="EMAIL" placeholder="Enter Email" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email '" required="" type="email">
+                                        <div style="position: absolute; left: -5000px;">
+                                            <input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-12">
+                                        <button class="nw-btn primary-btn">Subscribe<span class="lnr lnr-arrow-right"></span></button>
+                                    </div>
+                                </div>
+                                <div class="info"></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row footer-bottom d-flex justify-content-between">
+                <p class="col-lg-8 col-sm-12 footer-text m-0">
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                    <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                </p>
+                <div class="col-lg-4 col-sm-12 footer-social">
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-dribbble"></i></a>
+                    <a href="#"><i class="fa fa-behance"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End footer Area -->
+
+        <script src="/js/vendor/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <script src="/js/vendor/bootstrap.min.js"></script>
+        <script src="/js/jquery.ajaxchimp.min.js"></script>
+        <script src="/js/jquery.nice-select.min.js"></script>
+        <script src="/js/jquery.sticky.js"></script>
+        <script src="/js/parallax.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="/js/jquery.magnific-popup.min.js"></script>
+        <script src="/js/waypoints.min.js"></script>
+        <script src="/js/jquery.counterup.min.js"></script>
+        <script src="/js/main.js"></script>
+        <script type = "text/javascript" src="/js/tabs_change.js"></script>
+        <script src="/js/interaction.js"></script>
+
+    </body>
+</html>
